@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toggle.Infra", "src\Toggle.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1A4D1592-0DED-4376-AAFA-CD0F5FA864A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toggle.Domain.Test", "test\Toggle.Domain.Test\Toggle.Domain.Test.csproj", "{8DEBAE6E-A01E-4024-9842-F57DBA369C43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{EE33BF3D-15CD-4A8E-9032-7BD2FA0EB870}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE33BF3D-15CD-4A8E-9032-7BD2FA0EB870}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE33BF3D-15CD-4A8E-9032-7BD2FA0EB870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DEBAE6E-A01E-4024-9842-F57DBA369C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DEBAE6E-A01E-4024-9842-F57DBA369C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DEBAE6E-A01E-4024-9842-F57DBA369C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DEBAE6E-A01E-4024-9842-F57DBA369C43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{9CCBFF49-C456-447A-8209-F9876377A501} = {A1A621CE-AABC-4D20-9165-EB127EFDC645}
 		{2D33147C-7AFB-4405-A83C-4BD6192E133B} = {A1A621CE-AABC-4D20-9165-EB127EFDC645}
 		{EE33BF3D-15CD-4A8E-9032-7BD2FA0EB870} = {A1A621CE-AABC-4D20-9165-EB127EFDC645}
+		{8DEBAE6E-A01E-4024-9842-F57DBA369C43} = {1A4D1592-0DED-4376-AAFA-CD0F5FA864A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7627588D-3455-4EEE-8A38-3A52D364B522}
