@@ -29,16 +29,16 @@ Compare the results of <code>/api/toggles<b>/1/</b>1.0</code> and <code>/api/tog
 #### GET /api/toggles/:id
 Returns specified toggle, be it global or service-specific. If nonexistent, returns 404.
 
-#### POST /api/toggle/:serviceId/:version
+#### POST /api/toggles/:serviceId/:version
 Body: `{ "name": "name", "value": "value" }`
 
 Creates toggle for the service and version specified. Returns 404 if service doesn't exist.
 
-#### PUT /api/toggle/:id
+#### PUT /api/toggles/:id
 Body: `{ "name": "new name", "value": "new value" }`
 
 Updates specified toggle. Returns 404 if toggle doesn't exist.
 
-#### DELETE /api/toggle/:id
+#### DELETE /api/toggles/:id
 
 Deletes specified toggle. Returns 404 if toggle doesn't exist.
