@@ -25,7 +25,10 @@ namespace Toggle.Domain.Services
             return serviceToggles.Union(globalToggles.Where(g => serviceToggles.All(s => s.Name != g.Name)));
         }
 
-        public async Task CreateAsync(int serviceId, string version, string name, string value)
+        public async Task<Entities.Toggle> GetById(int id) =>
+            await toggles.GetByIdAsync(id);
+
+        public async Task<Entities.Toggle> CreateAsync(int serviceId, string version, string name, string value)
         {
             var service = await services.GetByIdAsync(serviceId);
             if (service == null)
@@ -33,6 +36,8 @@ namespace Toggle.Domain.Services
 
             var toggle = new Entities.Toggle(serviceId, version, name, value);
             await toggles.CreateAsync(toggle);
+
+            return toggle;
         }
 
         public async Task UpdateAsync(int id, string name, string value)

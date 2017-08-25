@@ -50,6 +50,18 @@ namespace Toggle.Domain.Test.Services
         }
 
         [Fact]
+        public async Task GetByIdShouldReturnToggle()
+        {
+            mockToggles
+                .Setup(m => m.GetByIdAsync(1))
+                .Returns(Task.FromResult(new ToggleListBuilder().WithDefaultGlobalToggle().Build().First()));
+
+            var toggle = await toggleServices.GetById(1);
+
+            toggle.Should().NotBeNull();
+        }
+
+        [Fact]
         public void GetFromServiceShouldMergeToggles()
         {
             mockToggles
